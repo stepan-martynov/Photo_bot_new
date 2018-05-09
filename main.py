@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import telebot
-import time
 
 bot = telebot.TeleBot('366514649:AAEL4gxETw62Rw1fdDoHuVB8MlVQpUeNtJY')
 
@@ -12,8 +11,4 @@ def echo_message(message):
 
 
 if __name__ == '__main__':
-    while True:
-        try:
-            bot.polling(none_stop=True)
-        except Exception as e:
-            time.sleep(15)
+        bot.polling(none_stop=True)
