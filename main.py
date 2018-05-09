@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import telebot
-import config
 import time
 
-bot = telebot.TeleBot(config.token)
+bot = telebot.TeleBot('366514649:AAEL4gxETw62Rw1fdDoHuVB8MlVQpUeNtJY')
 
 
 @bot.message_handler(func=lambda message: True, content_types=['text'])
